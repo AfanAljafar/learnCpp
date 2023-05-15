@@ -1,22 +1,25 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 struct
 {
-    char Name[100], Study[100], Faculty[100], Class[100];
+    string Name, Study, Faculty, Class;
 } d;
 
 int main()
 {
     cout << "Name : ";
-    cin >> d.Name;
+    getline(cin, d.Name);
     cout << "Study : ";
-    cin >> d.Study;
+    getline(cin, d.Study);
     cout << "Class : ";
-    cin >> d.Class;
+    getline(cin, d.Class);
     cout << "Faculty : ";
-    cin >> d.Faculty;
+    getline(cin, d.Faculty);
+
+    cout << d.Name << " studying " << d.Study << " at class " << d.Class << " faculty " << d.Faculty << endl;
 
     return 0;
 }
