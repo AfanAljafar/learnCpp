@@ -19,4 +19,6 @@ int main()
     cin>>num2;
     res = num1 + num2;
     cout<<res;
+
+    return 0;
 }
